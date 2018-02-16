@@ -1,0 +1,169 @@
+import java.util.*;
+public class PP5_7
+{
+    public static void main (String[]args) 
+ {
+       Scanner scan = new Scanner (System.in);
+       Random gen = new Random();
+       final int ROCK = 1;
+       final int PAPER = 2;
+       final int SCISSORS = 3;
+       final int LIZARD = 4; 
+       final int SPOCK = 5;
+       int choice = 1;
+	  
+   
+
+   while (choice >= 1 && choice <= 5)
+   {
+     System.out.println ("Please enter your choice: \n 1 for Rock, \n 2 for Paper, \n 3 for Scissors, \n 4 for Lizard, \n 5 for Spock \n 0 to stop");
+    choice = scan.nextInt();
+   int cpuChoice = gen.nextInt (5)+1;
+   if (choice == ROCK)
+   {
+     if (cpuChoice == LIZARD )
+     { 
+       System.out.println ("you win");
+       System.out.println ("Computer chose Lizard");
+        }
+             if (cpuChoice == SCISSORS )
+     { 
+       System.out.println ("you win");
+       System.out.println ("Computer chose Scissors");
+        }
+          if (cpuChoice == SPOCK )
+     { 
+       System.out.println ("you lose");
+       System.out.println ("Computer chose Spock");
+        }
+             if (cpuChoice == PAPER )
+     { 
+       System.out.println ("you lose");
+       System.out.println ("Computer chose Paper");
+        }
+     if (cpuChoice == ROCK )
+     { 
+       System.out.println ("you tied");
+       System.out.println ("Computer chose Rock");
+        }
+    }
+    
+       if (choice == PAPER)
+   {
+     if (cpuChoice == ROCK )
+     { 
+       System.out.println ("you win");
+       System.out.println ("Computer chose Rock");
+        }
+             if (cpuChoice == SPOCK )
+     { 
+       System.out.println ("you win");
+       System.out.println ("Computer chose Spock");
+        }
+          if (cpuChoice == SCISSORS )
+     { 
+       System.out.println ("you lose");
+       System.out.println ("Computer chose Scissors");
+        }
+             if (cpuChoice == LIZARD )
+     { 
+       System.out.println ("you lose");
+       System.out.println ("Computer chose Lizard");
+        }
+        if (cpuChoice == PAPER )
+     { 
+       System.out.println ("you tied");
+       System.out.println ("Computer chose Paper");
+        }
+    }
+    
+      if (choice == SCISSORS)
+   {
+     if (cpuChoice == LIZARD )
+     { 
+       System.out.println ("you win");
+       System.out.println ("Computer chose Lizard");
+        }
+             if (cpuChoice == PAPER )
+     { 
+       System.out.println ("you win");
+       System.out.println ("Computer chose Paper");
+        }
+          if (cpuChoice == SPOCK )
+     { 
+       System.out.println ("you lose");
+       System.out.println ("Computer chose Spock");
+        }
+             if (cpuChoice == ROCK )
+     { 
+       System.out.println ("you lose");
+       System.out.println ("Computer chose Rock");
+        }
+        if (cpuChoice == SCISSORS )
+     { 
+       System.out.println ("you tied");
+       System.out.println ("Computer chose Scissors");
+        }
+    }
+    
+       if (choice == LIZARD)
+   {
+     if (cpuChoice == SPOCK )
+     { 
+       System.out.println ("you win");
+       System.out.println ("Computer choose Spock");
+        }
+             if (cpuChoice == PAPER )
+     { 
+       System.out.println ("you win");
+       System.out.println ("Computer choose Paper");
+        }
+          if (cpuChoice == SCISSORS )
+     { 
+       System.out.println ("you lose");
+       System.out.println ("Computer choose Scissors");
+        }
+             if (cpuChoice == ROCK )
+     { 
+       System.out.println ("you lose");
+       System.out.println ("Computer choose Rock");
+        }
+        if (cpuChoice == LIZARD )
+     { 
+       System.out.println ("you tied");
+       System.out.println ("Computer choose Lizard");
+        }
+    }
+    
+       if (choice == SPOCK)
+   {
+     if (cpuChoice == ROCK )
+     { 
+       System.out.println ("you win");
+       System.out.println ("Computer choose Rock");
+        }
+             if (cpuChoice == SCISSORS )
+     { 
+       System.out.println ("you win");
+       System.out.println ("Computer choose Scissors");
+        }
+          if (cpuChoice == LIZARD )
+     { 
+       System.out.println ("you lose");
+       System.out.println ("Computer choose Lizard");
+        }
+             if (cpuChoice == PAPER )
+     { 
+       System.out.println ("you lose");
+       System.out.println ("Computer choose Paper");
+        }
+        if (cpuChoice == SPOCK )
+     { 
+       System.out.println ("you tied");
+       System.out.println ("Computer choose Spock");
+        }
+    }
+
+  }
+  }
+}
